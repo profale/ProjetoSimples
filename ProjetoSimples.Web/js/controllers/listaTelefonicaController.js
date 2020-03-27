@@ -49,6 +49,29 @@
             });
     };
 
+    $scope.classe1 = "selecionado";
+    $scope.classe2 = "negrito";
+
+    $scope.apagarContatos = function (contatos) {
+        //console.log(contatos);
+        //permiti passar uma funcao que recebe um elemento e analisa esse contato e so faz return se o contato estiver selecionado
+        $scope.contatos = contatos.filter(function (contato) {
+            if (!contato.selecionado) return contato;
+        });
+    };
+
+    $scope.isContatoSelecionado = function (contatos) {
+        //some -> faz de forma similiar ao filter
+        return isContatoSelecionado = contatos.some(function (contato) {
+            return contato.selecionado;
+        });
+    };
+
+    $scope.ordenarPor = function (campo) {
+        $scope.criterioDeOrdenacao = campo;
+        $scope.direcaoDaOrdenacao = !$scope.direcaoDaOrdenacao;
+    };
+
     carregarContatos();
     carregarOperadoras();
 });
