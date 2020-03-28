@@ -1,5 +1,6 @@
-﻿angular.module("app").directive("uiAccordions", function () {
+﻿angular.module("listaTelefonica").directive("uiAccordions", function () {
     return {
+        //controller mantem os estados de todos os accordions. vai ter o scope dos accordions
         controller: function ($scope, $element, $attrs) {
             var accordions = [];
 
@@ -16,14 +17,14 @@
         }
     };
 });
-angular.module("app").directive("uiAccordion", function () {
+angular.module("listaTelefonica").directive("uiAccordion", function () {
     return {
         templateUrl: "/view/accordion.html",
         transclude: true,
         scope: {
             title: "@"
         },
-        require: "^uiAccordions",
+        require: "^uiAccordions",//^prefixando o elemento uiAccordions
         link: function (scope, element, attrs, ctrl) {
             //ctrl.helloWorld();
             ctrl.registerAccordion(scope);

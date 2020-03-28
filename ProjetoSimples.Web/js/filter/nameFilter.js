@@ -1,4 +1,4 @@
-﻿angular.module("app").filter("name", function () {
+﻿angular.module("listaTelefonica").filter("name", function () {
     return function (input) { //input(pode ser qq nome) - o que vai se propor a transformar
         var listaDeNomes = input.split(" ");
         //map -> pega a lista de nomes e para cada elemento que tiver (nome) ira derivar um novo array

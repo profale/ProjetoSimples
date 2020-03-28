@@ -86,7 +86,7 @@
     <Content Include="js\filter\nameFilter.js" />
     <Content Include="js\services\contatosApiServices.js" />
     <Content Include="js\services\operadoraApiServices.js" />
-    <Content Include="js\services\serialGeneratorConfig.js" />
+    <Content Include="js\config\serialGeneratorConfig.js" />
     <Content Include="lib\serialGenerator.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -877,7 +877,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.js" />
+    <Content Include="js\app.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

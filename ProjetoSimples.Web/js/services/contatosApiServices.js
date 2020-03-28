@@ -1,6 +1,6 @@
 ﻿//factory - tipo de serviço
 //fabrica - cria um objeto
-app.factory("contatosAPI"/*registra*/, function ($http, config) {
+angular.module("listaTelefonica").factory("contatosAPI"/*registra*/, function ($http, config) {
     var _getContatos = function () /*funcao privada*/{
         return $http.get(config.baseUrl + "contato/listar");
     };

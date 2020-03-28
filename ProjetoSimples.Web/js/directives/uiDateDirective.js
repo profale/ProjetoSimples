@@ -1,12 +1,14 @@
-﻿angular.module("app").directive("uiDate", function ($filter) {
+﻿angular.module("listaTelefonica").directive("uiDate", function ($filter) {
     return {
         //require
-        require : "ngModel", //permiti ter acesso a api de ngModel e recebo como 4 paramentro ctrl
-        link: function (scope, element, attrs, ctrl) {
+        require : "ngModel", //permiti ter acesso a api de ngModel e recebo como 4 paramentro ctrl da funcao link
+        link: function (scope, element, attrs, ctrl) { //executada depois do template ter sido compilado, podemos utilizá-la para interagir com a DOM,
+                                                        //tratando eventos ou mesmo para definir o comportamento associado com a lógica da diretiva.
             element.bind("keyup", function () { //sempre que digitar alguma coisa eu quero ver o viewValue
+                //console.log(ctrl.$viewValue) permiti visualizar tudo que é digitado no campo
                 //funcao para formatacao de data
                 var _formatDate = function (date) {
-                    date = date.replace(/[^0-9]+/g, "");
+                    date = date.replace(/[^0-9]+/g, ""); //limpar a data
                     if (date.length > 2) {
                         date = date.substring(0, 2) + "/" + date.substring(2);
                     }

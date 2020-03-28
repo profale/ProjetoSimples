@@ -15,7 +15,7 @@
     var carlos = new Pessoa("Carlos", 25);
     console.log(carlos);
  */
-app.service("operadorasAPI", function ($http, config) {
+angular.module("listaTelefonica").service("operadorasAPI", function ($http, config) {
     this.getOperadoras = function () {
         return $http.get(config.baseUrl + "operadora/listar");
     };

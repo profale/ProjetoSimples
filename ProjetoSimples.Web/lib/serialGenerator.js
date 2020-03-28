@@ -1,9 +1,9 @@
-﻿//app.module("serialGenerator", []);
-angular.module("app").provider("serialGenerator", function (config) {
+﻿angular.module("serialGenerator", []);
+angular.module("serialGenerator").provider("serialGenerator", function () {
     var _length = 10;
 
     this.getLength = function () {
-        return _length;
+        return _length
     };
 
     this.setLength = function (length) {
@@ -19,6 +19,7 @@ angular.module("app").provider("serialGenerator", function (config) {
                 }
                 return serial;
             }
+
         };
     };
 });

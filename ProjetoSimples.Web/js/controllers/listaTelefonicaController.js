@@ -1,5 +1,7 @@
-﻿app.controller("ListaTelefonicaController", function ($scope, $http, $filter, contatosAPI, operadorasAPI, serialGenerator) {
-    $scope.mensagem = "Lista Telefonica";
+﻿angular.module("listaTelefonica").controller("ListaTelefonicaController", function ($scope, contatosAPI, operadorasAPI, serialGenerator) {
+    $scope.app = "Lista Telefônica";
+    $scope.contatos = [];
+    $scope.operadoras = [];
 
     var carregarContatos = function () {
        contatosAPI.getContatos().then(function (response, status) {
@@ -49,8 +51,8 @@
             });
     };
 
-    $scope.classe1 = "selecionado";
-    $scope.classe2 = "negrito";
+    //$scope.classe1 = "selecionado";
+    //$scope.classe2 = "negrito";
 
     $scope.apagarContatos = function (contatos) {
         //console.log(contatos);
@@ -62,7 +64,7 @@
 
     $scope.isContatoSelecionado = function (contatos) {
         //some -> faz de forma similiar ao filter
-        return isContatoSelecionado = contatos.some(function (contato) {
+        return contatos.some(function (contato) {
             return contato.selecionado;
         });
     };

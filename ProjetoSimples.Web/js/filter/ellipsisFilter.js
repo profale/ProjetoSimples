@@ -1,4 +1,4 @@
-﻿angular.module("app").filter("ellipsis", function () {
+﻿angular.module("listaTelefonica").filter("ellipsis", function () {
     return function (input, size) {
         //console.log(input);
         //if (size === undefined) {
