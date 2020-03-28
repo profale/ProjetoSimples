@@ -79,7 +79,6 @@
     <None Include="packages.config" />
     <Content Include="css\estilos.css" />
     <Content Include="css\ui.css" />
-    <Content Include="js\directives\uiAccordionDirective.js" />
     <Content Include="js\directives\uiAlertDirective.js" />
     <Content Include="js\directives\uiDateDirective.js" />
     <Content Include="js\filter\ellipsisFilter.js" />
@@ -88,6 +87,7 @@
     <Content Include="js\services\operadoraApiServices.js" />
     <Content Include="js\config\serialGeneratorConfig.js" />
     <Content Include="lib\serialGenerator.js" />
+    <Content Include="lib\ui.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -887,7 +887,6 @@
     <Content Include="js\controllers\listaTelefonicaController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="index.html" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -900,7 +899,6 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="js\value\configValue.js" />
-    <Content Include="view\accordion.html" />
     <Content Include="view\alert.html" />
     <Content Include="view\footer.html" />
     <Content Include="view\ListaTelefonica.html" />
