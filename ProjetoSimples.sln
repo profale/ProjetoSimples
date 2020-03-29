@@ -67,30 +67,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {156282A7-0D67-4C2D-ACB6-AA4A88A8C5E4}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://alessandraferreira.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ProjetoSimples.Domain\\ProjetoSimples.Domain.csproj
-		SccProjectTopLevelParentUniqueName1 = ProjetoSimples.sln
-		SccProjectName1 = ProjetoSimples.Domain
-		SccLocalPath1 = ProjetoSimples.Domain
-		SccProjectUniqueName2 = ProjetoSimples.Infra\\ProjetoSimples.Infra.csproj
-		SccProjectTopLevelParentUniqueName2 = ProjetoSimples.sln
-		SccProjectName2 = ProjetoSimples.Infra
-		SccLocalPath2 = ProjetoSimples.Infra
-		SccProjectUniqueName3 = ProjetoSimples.Presentation.API\\ProjetoSimples.Presentation.API.csproj
-		SccProjectTopLevelParentUniqueName3 = ProjetoSimples.sln
-		SccProjectName3 = ProjetoSimples.Presentation.API
-		SccLocalPath3 = ProjetoSimples.Presentation.API
-		SccProjectUniqueName4 = ProjetoSimples.Test\\ProjetoSimples.Test.csproj
-		SccProjectTopLevelParentUniqueName4 = ProjetoSimples.sln
-		SccProjectName4 = ProjetoSimples.Test
-		SccLocalPath4 = ProjetoSimples.Test
-		SccProjectUniqueName5 = ProjetoSimples.Web\\ProjetoSimples.Web.csproj
-		SccProjectTopLevelParentUniqueName5 = ProjetoSimples.sln
-		SccProjectName5 = ProjetoSimples.Web
-		SccLocalPath5 = ProjetoSimples.Web
-	EndGlobalSection
 EndGlobal

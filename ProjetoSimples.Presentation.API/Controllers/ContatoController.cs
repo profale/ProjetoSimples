@@ -36,7 +36,7 @@ namespace ProjetoSimples.Presentation.API.Controllers
         }
 
         [HttpGet]
-        [Route("obter")]
+        [Route("obter/{id}")]
         public HttpResponseMessage Obter(int id)
         {
             var lista = _contatoDomainService.Obter(id);

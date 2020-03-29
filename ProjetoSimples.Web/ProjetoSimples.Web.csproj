@@ -79,6 +79,10 @@
     <None Include="packages.config" />
     <Content Include="css\estilos.css" />
     <Content Include="css\ui.css" />
+    <Content Include="index.html" />
+    <Content Include="js\config\routeConfig.js" />
+    <Content Include="js\controllers\detalhesContatoCtrl.js" />
+    <Content Include="js\controllers\novoContatoCtrl.js" />
     <Content Include="js\directives\uiAlertDirective.js" />
     <Content Include="js\directives\uiDateDirective.js" />
     <Content Include="js\filter\ellipsisFilter.js" />
@@ -900,8 +904,10 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="js\value\configValue.js" />
     <Content Include="view\alert.html" />
+    <Content Include="view\contatos.html" />
+    <Content Include="view\detalhesContato.html" />
     <Content Include="view\footer.html" />
-    <Content Include="view\ListaTelefonica.html" />
+    <Content Include="view\novoContato.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
