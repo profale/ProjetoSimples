@@ -30,5 +30,8 @@
             }
         }
     });
+    $routeProvider.when("/error", {
+        templateUrl: "view/error.html"
+    });
     $routeProvider.otherwise({ redirectTo: "/contatos" });
 });
