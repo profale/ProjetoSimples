@@ -38,6 +38,8 @@ namespace ProjetoSimples.Infra.Mappings
             Property(c => c.Serial)
                 .HasColumnName("PS_NOM_SERIAL");
 
+
+
             HasRequired(c => c.Operadora)
             .WithMany(o => o.Contatos)
             .HasForeignKey(c => c.IdOperadora);
