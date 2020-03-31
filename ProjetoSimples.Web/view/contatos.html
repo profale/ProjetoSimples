@@ -1,4 +1,9 @@
-﻿<div class="jumbotron">
+﻿<button class="btn btn-primary" ng-click="showImage =!showImage">Show/Hide Image</button>
+<div ng-show="showImage">
+    <img ng-src="../images/angularjs.png" />
+</div>
+<div class="jumbotron">
+    {{app}}<!--{{app | upper}} - aplicar direto no controller-->
     <input class="form-control" type="text" ng-model="criterioDeBusca" ng-model-options="{updateOn : 'default blur', debounce:{default: 500, blue: 0 }}" placeholder="O que você está buscando?" /> <!--ng-model-options="{updateOn : 'blur'}"-->
     <table ng-show="contatos.length > 0" class="table table-striped">
         <tr>
@@ -10,16 +15,17 @@
             <th>Preço</th>
             <th>Data</th>
         </tr>
-        <tr ng-class="{'selecionado negrito': contato.selecionado}" ng-repeat="contato in contatos | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao">
+        <tr ng-class="{'selecionado negrito': contato.selecionado}" ng-repeat="contato in contatos | filter:criterioDeBusca | orderBy:criterioDeOrdenacao:direcaoDaOrdenacao track by contato.id"> <!--sempre usar o track by no ng-repeat-->
             <td><input type="checkbox" ng-model="contato.selecionado" ng-click="verificarContatoSelecionado(contatos)" /></td>
             <td>{{::contato.serial}}</td> <!--{{::contato.serial}} one-time bind-->
             <td><a href="#/detalhesContato/{{contato.id}}">{{contato.nome | name}}</a></td>
             <td>{{contato.telefone}}</td>
-            <td>{{contato.operadora.nome}}</td>
-            <td>{{contato.operadora.precoComImposto | currency}}</td>
-            <td>{{contato.data | date:'dd/MM/yyyy'}}</td>
+            <td>{{::contato.operadora.nome}}</td>
+            <td>{{::contato.operadora.precoComImposto | currency}}</td>
+            <td>{{::contato.data | date:'dd/MM/yyyy'}}</td>
         </tr>
     </table>
+    <button class="btn btn-primary" ng-click="reset()">Reset</button>
     <hr />
     <a class="btn btn-primary btn-block" href="#/novoContato">Novo Contato</a>
     <button class="btn btn-danger btn-block" ng-click="apagarContatos(contatos)" ng-if="hasContatoSelecionado">Apagar Contatos</button>

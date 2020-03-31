@@ -1,5 +1,5 @@
-﻿angular.module("listaTelefonica").controller("ListaTelefonicaController", function ($scope, serialGenerator, contatos, operadoras) {
-    $scope.app = "Lista Telefônica";
+﻿angular.module("listaTelefonica").controller("ListaTelefonicaController", function ($scope, serialGenerator, contatos, operadoras, $filter) {
+    $scope.app = $filter('upper')("Lista Telefônica");
     $scope.contatos = contatos.data;
     $scope.operadoras = operadoras.data
 
@@ -56,6 +56,11 @@
         $scope.criterioDeOrdenacao = campo;
         $scope.direcaoDaOrdenacao = !$scope.direcaoDaOrdenacao;
     };
+
+    //track by acontece por referencia
+    $scope.reset = function () {
+        $scope.contatos = angular.copy($scope.contatos);
+    }
 
     init();
 });

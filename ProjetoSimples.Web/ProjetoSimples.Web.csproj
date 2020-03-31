@@ -79,6 +79,7 @@
     <None Include="packages.config" />
     <Content Include="css\estilos.css" />
     <Content Include="css\ui.css" />
+    <Content Include="images\angularjs.png" />
     <Content Include="index.html" />
     <Content Include="js\config\interceptorsConfig.js" />
     <Content Include="js\config\routeConfig.js" />
@@ -88,6 +89,7 @@
     <Content Include="js\directives\uiDateDirective.js" />
     <Content Include="js\filter\ellipsisFilter.js" />
     <Content Include="js\filter\nameFilter.js" />
+    <Content Include="js\filter\upperFilter.js" />
     <Content Include="js\interceptors\errorinterceptor.js" />
     <Content Include="js\interceptors\loadingInterceptor.js" />
     <Content Include="js\interceptors\timestampInterceptor.js" />
